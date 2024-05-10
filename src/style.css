@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+     background-image: url("./img/round-trip-flight.jpeg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+     background-attachment: fixed;
+}
+.header_container{
+    position: sticky;
+    top: 0;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 99, 71);
+    color: rgb(12, 12, 12);
+    height: 50px;
+    width: 100%;
+    z-index: 99;
+}
+.nav_container .nav_bar , .nav_right{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav_right{
+    font-size: 1.5rem;
+    gap: 30px;
+    margin-right: -150px;
+}
+.nav_container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -150px;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    color: rgb(128, 7, 7);
+}
+
+body .price{
+    margin-left: 200px;
+    font-size: 1.5rem;
+}
+
+.select_option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.select_option a{
+    border:1px solid wheat;
+    padding: 2px;
+    width: 120px;
+    text-align: center;
+}
+.select_option a:focus{
+    background-color: blue;
+}
+.main_container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.main_container .day{
+    width: 140px;
+    background-color: rgb(253, 134, 79);
+    border: 1px solid white;
+    color: rgb(12, 12, 12);
+    padding: 5px;
+}
+.main_container h1{
+    font-size: 1.5rem;
+}
+
+.Extra_Option{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.Extra_Option a{
+    background-color: rgb(247, 126, 71);
+    padding: 2px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid wheat;
+}
+.Extra_Option a:hover{
+    background: lightsalmon;
+}
+.parsed h3{
+    margin-left: 145px;
+    color: rgb(54, 54, 54);
+}
+
+table{
+    display: grid;
+    justify-content: center;
+    /* background-color:rgb(247, 126, 71); */
+    border: 1px solid black;
+}
+ th, td {
+    padding: 10px;
+  }
+
+  table .button{
+    background-color: rgb(81, 64, 231);
+    color: beige;
+    width: 70px;
+    border-radius: 30px;
+    padding: 0;
+    text-align: center;
+  }
+  table .button:hover{
+    background-color: tomato;
+  }

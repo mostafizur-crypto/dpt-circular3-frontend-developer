@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Flight Expert</title>
+  <link rel="shortcut icon" href="./img/round-trip-flight.jpeg" type="image/x-icon">
+</head>
+<body>
+    <!-- Nav Bar Create Start -->
+  <header class="header_container">
+    <nav class="nav_container">
+         <h1>DPL</h1>
+        <div class="nav_bar">
+        <li>Dashboard</li>
+        <li>Master Price</li>
+        <li>Custom Price</li>
+        <li>Calendar</li>
+        <li>Reports</li>
+        </div>
+<div class="nav_right">
+     <li><i class="fa-solid fa-bell"></i></li>
+    <li><i class="fa-solid fa-user"></i></li>
+</div>
+    </nav>
+    <!-- Nav Bar END -->
+  </header>
+
+  <h1 class="price">Master Price</h1>
+  <hr>
+  
+  
+  <div class="select_option"> 
+   <a href="#">Round Trip</a>
+  <a href="#">One Way</a>
+  <a href="#">Multi City</a>
+  </div>
+  <hr class="mt-7 w-9/12 ml-36 ">
+  <!-- Main Section Start -->
+  <main>
+    <div class="main_container">
+        <select class="day">
+            <option value="volvo">Dhaka</option>
+            <option value="saab">Rajsahi</option>
+            <option value="vw">Barisal</option>
+            <option value="vw">Chattagram</option>
+            <option value="vw">Sylhet</option>
+            <option value="vw">Serpur</option>
+            <option value="audi" selected>From</option>
+          </select>
+          <select class="day">
+              <option value="volvo">Kolkata</option>
+              <option value="saab">Kashmir</option>
+              <option value="vw">Nepal</option>
+              <option value="vw">Thailand</option>
+              <option value="vw">Bhutan</option>
+              <option value="vw">Bhutan</option>
+              <option value="vw">Indonesia</option>
+              <option value="vw">Dubai</option>
+              <option value="vw" selected>To</option>
+            </select>
+            <input class="day" type="date" >
+            <select class="day">
+              <option value="day">1</option>
+              <option value="day">2</option>
+              <option value="day">3</option>
+              <option value="day">4</option>
+              <option value="day">5</option>
+              <option value="day">6</option>
+              <option value="day">7</option>
+              <option value="day">8</option>
+              <option value="day">9</option>
+              <option value="day">10</option>
+              <option value="day" selected>Day-</option>
+            </select>
+            <select class="day">
+              <option value="day">1</option>
+              <option value="day">2</option>
+              <option value="day">3</option>
+              <option value="day">4</option>
+              <option value="day">5</option>
+              <option value="day">6</option>
+              <option value="day">7</option>
+              <option value="day">8</option>
+              <option value="day">9</option>
+              <option value="day">10</option>
+                <option value="day" selected>Day+</option>
+              </select>
+            <select class="day">
+                <option value="day">1</option>
+                <option value="day">2</option>
+                <option value="day">3</option>
+                <option value="day" selected>Any Time </option>
+              </select>
+              <h1>+</h1>
+              <select  class="day">
+                <option value="day">1</option>
+                <option value="day">2</option>
+                <option value="day">3</option>
+                <option value="day">4</option>
+                <option value="day">5</option>
+                <option value="day">6</option>
+                <option value="day">7</option>
+                <option value="day">8</option>
+                <option value="day">9</option>
+                <option value="day">10</option>
+                  <option value="day" selected>ADT </option>
+                </select>
+                <select  class="day">
+                  <option value="day">1</option>
+                  <option value="day">2</option>
+                  <option value="day">3</option>
+                  <option value="day">4</option>
+                  <option value="day">5</option>
+                  <option value="day">6</option>
+                  <option value="day">7</option>
+                  <option value="day">8</option>
+                  <option value="day">9</option>
+                  <option value="day">10</option>
+                  <option value="day" selected>1</option>
+                </select>
+                <h1>+</h1>
+    </div>
+    <hr class="mt-4 w-9/12 ml-36 ">
+
+    <div class="Extra_Option">
+        <div>
+            <input type="checkbox">
+        <label for="">Extra Options</label>
+        </div>
+       <div>
+        <label for="">Environment</label>
+    <input type="radio" id="Dummy" name="fav_air" value="Dummy">
+    <label for="">Dummy</label>
+    <input type="radio" id="PDT" name="fav_air" value="PDT">
+    <label for="">PDT</label>
+       </div> 
+    
+    <a href="#">SEARCH</a>
+    </div>
+    <hr class="mt-2 w-9/12 ml-36 ">
+    
+    <div class="parsed">
+      <h3>Data parsed successfully</h3>
+    </div>
+  </main>
+  <!-- Table Start -->
+  <table>
+    <tr>
+      <th>FLIGHT</th>
+      <th>AIRCRAFT</th>
+      <th>CLASS</th>
+      <th>FARE</th>
+      <th>ROUTE</th>
+      <th>DEPARTURE</th>
+      <th>ARRIVAL</th>
+      <th>DURATION</th>
+      <th>PRICE</th>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td>19H 00M</td>
+      <td>632.30</td>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td></td>
+      <td class="button">SELECT</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>FLIGHT</th>
+      <th>AIRCRAFT</th>
+      <th>CLASS</th>
+      <th>FARE</th>
+      <th>ROUTE</th>
+      <th>DEPARTURE</th>
+      <th>ARRIVAL</th>
+      <th>DURATION</th>
+      <th>PRICE</th>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td>19H 00M</td>
+      <td>632.30</td>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td></td>
+      <td class="button">SELECT</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>FLIGHT</th>
+      <th>AIRCRAFT</th>
+      <th>CLASS</th>
+      <th>FARE</th>
+      <th>ROUTE</th>
+      <th>DEPARTURE</th>
+      <th>ARRIVAL</th>
+      <th>DURATION</th>
+      <th>PRICE</th>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td>19H 00M</td>
+      <td>632.30</td>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td></td>
+      <td class="button">SELECT</td>
+    </tr>
+  </table>
+
+
+  <table>
+    <tr>
+      <th>FLIGHT</th>
+      <th>AIRCRAFT</th>
+      <th>CLASS</th>
+      <th>FARE</th>
+      <th>ROUTE</th>
+      <th>DEPARTURE</th>
+      <th>ARRIVAL</th>
+      <th>DURATION</th>
+      <th>PRICE</th>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td>19H 00M</td>
+      <td>632.30</td>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td></td>
+      <td class="button">SELECT</td>
+    </tr>
+  </table>
+
+
+  <table>
+    <tr>
+      <th>FLIGHT</th>
+      <th>AIRCRAFT</th>
+      <th>CLASS</th>
+      <th>FARE</th>
+      <th>ROUTE</th>
+      <th>DEPARTURE</th>
+      <th>ARRIVAL</th>
+      <th>DURATION</th>
+      <th>PRICE</th>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td>19H 00M</td>
+      <td>632.30</td>
+    </tr>
+    <tr>
+      <td>TK 333</td>
+      <td>723</td>
+      <td>E</td>
+      <td>EF1PXOW</td>
+      <td>DAC-IST</td>
+      <td>2024-11-22T23:30:00</td>
+      <td>2024-11-22T03:50:00</td>
+      <td></td>
+      <td class="button">SELECT</td>
+    </tr>
+  </table>
+</body>
+</html>
